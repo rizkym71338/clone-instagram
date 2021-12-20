@@ -5,13 +5,13 @@ const ProfileCard = (props) => {
         <>
             <div className="flex flex-row space-x-3 items-center justify-between">
                 <div className="flex flex-row items-center space-x-3">
-                    <div>
+                    <a href="#">
                         <img
                             src={props.img}
                             alt={props.alt}
                             className="w-14 rounded-full border border-gray-300"
                         />
-                    </div>
+                    </a>
                     <div className="flex flex-col">
                         <a href="#" className="text-xs">
                             {props.username}

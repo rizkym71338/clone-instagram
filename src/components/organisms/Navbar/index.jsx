@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <>
             <div className="bg-white border-b-2 py-3">
-                <div className="max-w-5xl mx-auto md:px-10 flex flex-row justify-between md:grid md:grid-cols-3">
+                <div className="max-w-5xl mx-auto px-2 md:px-10 flex flex-row justify-between md:grid md:grid-cols-3">
                     <div className="flex items-center">
                         <a href="/">
                             <img

@@ -9,12 +9,12 @@ const Story = () => {
 
     const responsive = {
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
+            breakpoint: { max: 3000, min: 784 },
             items: 8,
             slidesToSlide: 3 // optional, default to 1.
         },
         tablet: {
-            breakpoint: { max: 1024, min: 464 },
+            breakpoint: { max: 784, min: 464 },
             items: 6,
             slidesToSlide: 2 // optional, default to 1.
         },
@@ -27,7 +27,7 @@ const Story = () => {
 
     return (
         <>
-            <div className="bg-white mx-5 md:mx-0 md:mr-5 py-5 pl-3 rounded-sm border border-gray-300">
+            <div className="bg-white mx-5 lg:mx-0 lg:mr-5 py-5 pl-3 rounded-sm border border-gray-300">
                 <Carousel responsive={responsive}>
                     <div>
                         <StoryCard
