@@ -9,14 +9,14 @@ const SaranCard = (props) => {
                         <img
                             src={props.img}
                             alt={props.alt}
-                            className="w-10 rounded-full border border-gray-300"
+                            className="w-10 rounded-full border border-gray-300 dark:text-gray-100"
                         />
                     </a>
                     <div className="flex flex-col">
-                        <a href="#" className="text-xs">
+                        <a href="#" className="text-xs dark:text-gray-200 font-semibold">
                             {props.username}
                         </a>
-                        <div className="text-xs text-gray-400">
+                        <div className="text-xs text-gray-400 dark:text-gray-500">
                             {props.name}
                         </div>
                     </div>

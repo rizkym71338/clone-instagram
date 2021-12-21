@@ -6,7 +6,7 @@ import PostCard from "../../molecules/cards/PostCard";
 const Post = (props) => {
     return (
         <>
-            <div className="flex flex-col mt-8 bg-white border border-gray-300 rounded-sm">
+            <div className="flex flex-col mt-8 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-sm transition ease-in-out duration-500">
                 <div className="p-3">
                     <PostCard
                         img={props.img}

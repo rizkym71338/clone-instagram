@@ -27,7 +27,7 @@ const Story = () => {
 
     return (
         <>
-            <div className="bg-white mx-5 lg:mx-0 lg:mr-5 py-5 pl-3 rounded-sm border border-gray-300">
+            <div className="bg-white dark:bg-gray-700 mx-5 lg:mx-0 lg:mr-5 py-5 pl-3 rounded-sm border border-gray-300 dark:border-gray-600 transition ease-in-out duration-500">
                 <Carousel responsive={responsive}>
                     <div>
                         <StoryCard

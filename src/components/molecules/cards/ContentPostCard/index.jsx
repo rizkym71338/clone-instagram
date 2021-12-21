@@ -22,7 +22,7 @@ const ContentPostCard = (props) => {
                         {Simpan}
                     </a>
                 </div>
-                <a href="#" className="text-sm text-gray-700 font-bold">
+                <a href="#" className="text-sm text-gray-700 dark:text-gray-200 font-bold">
                     {props.like}
                 </a>
                 <a href="#" className="text-xs text-gray-400">

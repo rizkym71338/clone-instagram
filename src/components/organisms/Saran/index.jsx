@@ -8,10 +8,10 @@ const Saran = () => {
         <>
             <div className="flex flex-col">
                 <div className="flex flex-row justify-between mb-3">
-                    <div className="text-sm font-semibold text-gray-400">
+                    <div className="text-sm font-semibold text-gray-400 dark:text-gray-300">
                         Saran Untuk Anda
                     </div>
-                    <a href="#" className="text-xs font-semibold text-gray-700">
+                    <a href="#" className="text-xs font-semibold text-gray-700 dark:text-gray-500">
                         Lihat Semua
                     </a>
                 </div>

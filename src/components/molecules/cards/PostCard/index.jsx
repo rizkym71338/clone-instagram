@@ -15,7 +15,7 @@ const PostCard = (props) => {
                             />
                         </a>
                     </div>
-                    <a href="#" className="text-sm text-gray-700 font-bold">
+                    <a href="#" className="text-sm text-gray-700 dark:text-gray-200 font-bold">
                         {props.username}
                     </a>
                 </div>

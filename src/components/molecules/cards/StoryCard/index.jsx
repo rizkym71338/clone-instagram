@@ -13,7 +13,7 @@ const StoryCard = (props) => {
                         />
                     </a>
                 </div>
-                <div className="text-xs font-semibold text-center text-gray-700">
+                <div className="text-xs font-semibold text-center text-gray-700 dark:text-gray-200">
                     {props.username}
                 </div>
             </div>
