@@ -5,12 +5,14 @@ import './index.css';
 import Beranda from '../src/pages/Beranda';
 import reportWebVitals from './reportWebVitals';
 import Login from './pages/Login/Index';
+import Chat from './pages/Chat';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Beranda />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/chat" element={<Chat />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

@@ -5,7 +5,7 @@ import DarkMode from "../../atoms/DarkMode";
 import AlphaDev from "../../../assets/img/alpha-dev.jpg"
 import { Direct, Home, Like, Bulan, NewPost, People, Matahari } from "../../../assets/svg";
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [colorTheme, setTheme] = DarkMode();
 
@@ -22,20 +22,20 @@ const Navbar = () => {
                         <Search />
                     </div>
                     <div className="flex flex-row justify-end space-x-5 items-center">
-                        <a href="#">
-                            {Home}
+                        <a href="/">
+                            {props.home}
+                        </a>
+                        <a href="/chat">
+                            {props.chat}
                         </a>
                         <a href="#">
-                            {Direct}
+                            {props.newpost}
                         </a>
                         <a href="#">
-                            {NewPost}
+                            {props.people}
                         </a>
                         <a href="#">
-                            {People}
-                        </a>
-                        <a href="#">
-                            {Like}
+                            {props.like}
                         </a>
                         <a href="/login">
                             <img src={AlphaDev} alt="alpha-dev"
@@ -51,5 +51,13 @@ const Navbar = () => {
         </>
     )
 };
+
+Navbar.defaultProps = {
+    home: Home,
+    chat: Direct,
+    people: People,
+    newpost: NewPost,
+    like: Like,
+}
 
 export default Navbar;

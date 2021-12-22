@@ -6,13 +6,14 @@ import AlphaDev from "../../assets/img/alpha-dev.jpg";
 import Saran from "../../components/organisms/Saran";
 import Story from "../../components/organisms/Story";
 import Post from "../../components/organisms/Post";
+import { ActiveHome } from "../../assets/svg";
 
 
 const Main = () => {
     return (
         <>
             <div className="sticky top-0 z-50 w-full">
-                <Navbar />
+                <Navbar home={ActiveHome} />
             </div>
             <div className="relative z-40 min-h-screen bg-gray-100 dark:bg-gray-800 transition ease-in-out duration-500 bg-opacity-50">
                 <div className="flex flex-col lg:flex-row max-w-5xl min-h-screen mx-auto md:px-10">
