@@ -8,13 +8,15 @@ import Login from './pages/Login/Index';
 import Chat from './pages/Chat';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Beranda />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/chat" element={<Chat />} />
-    </Routes>
-  </BrowserRouter>,
+  < React.StrictMode >
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Beranda />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/chat" element={<Chat />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
