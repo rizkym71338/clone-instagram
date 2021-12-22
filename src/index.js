@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css';
 import Beranda from '../src/pages/Beranda';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/Login/Index';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Beranda />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Beranda />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

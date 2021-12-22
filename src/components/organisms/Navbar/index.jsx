@@ -37,7 +37,7 @@ const Navbar = () => {
                         <a href="#">
                             {Like}
                         </a>
-                        <a href="#">
+                        <a href="/login">
                             <img src={AlphaDev} alt="alpha-dev"
                                 className="w-6 rounded-full border border-gray-300"
                             />
