@@ -8,10 +8,11 @@ import Login from './pages/Login/Index';
 import Chat from './pages/Chat';
 
 ReactDOM.render(
-  < React.StrictMode >
+  <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Beranda />} />
+        <Route path="/" exact element={<Beranda />} />
+        <Route path="*" exact element={"404 NOT FOUND !!!"} />
         <Route path="/login" element={<Login />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
