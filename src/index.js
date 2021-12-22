@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import './index.css';
 import Beranda from '../src/pages/Beranda';
 import reportWebVitals from './reportWebVitals';
@@ -11,8 +11,8 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact element={<Beranda />} />
-        <Route path="*" exact element={"404 NOT FOUND !!!"} />
+        <Route path="/" element={<Beranda />} />
+        <Route path="*" element={<Navigate to="/" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
