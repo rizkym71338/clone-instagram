@@ -6,9 +6,9 @@ import { Routes, Route } from "react-router-dom"
 const App = () => {
   return (
     <Routes>
-      <Route path="/*" element={<Beranda />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/chat" element={<Chat />} />
+      <Route path="/" element={<Beranda />} />
+      <Route path="login" element={<Login />} />
+      <Route path="chat" element={<Chat />} />
     </Routes>
   )
 }
