@@ -2,7 +2,7 @@
   "homepage": "https://rizkym71338.github.io/clone-instagram",
   "name": "clone-instagram",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@tailwindcss/forms": "^0.4.0",
     "@testing-library/jest-dom": "^5.16.1",
