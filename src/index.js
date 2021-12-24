@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import './index.css';
-import Beranda from '../src/pages/Beranda';
 import reportWebVitals from './reportWebVitals';
-import Login from './pages/Login/Index';
-import Chat from './pages/Chat';
+
+import App from "./App"
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Beranda />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/chat" element={<Chat />} />
-    </Routes>
+    <App />
   </BrowserRouter>,
   document.getElementById('root')
 );
